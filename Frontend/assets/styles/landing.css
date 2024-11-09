@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color:
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    padding: 0.5rem;
+    background-color: white;
+}
+.header {
+    height: 130px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    padding-right: 0.5rem;
+}
+.nav {
+    display: flex;
+    align-items:
+    justify-content: space-between;
+}
+.logo {
+    height: 68px;
+    width: %;
+    background-color: transparent;
+}
+
+.header img {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+}
+.iconbtn {
+    background-color: transparent;
+    border: none;
+    color: green;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom:
+    cursor: pointer;
+
+}
+#profilebtn {
+    margin-left: 70px;
+    margin-right: 20px;
+}
+.searchsection {
+    background-color:
+    justify-content: space-between;
+    display: flex;
+}
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4e4e4;
+    padding: 10px;
+    color: white;
+    width: 90%;
+    border-radius: 15px;
+    height: 40px;
+    margin-right: 12px;
+}
+input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: #e4e4e4;
+    outline: none;
+}
+.searchbar select {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    outline: none;
+    color: black;
+    background-color: #e4e4e4;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+.searchbar input::placeholder {
+    font-size: 12px;
+
+}
+.separator {
+    font-weight: bold;
+}
+.bodycontent {
+    margin-top: 140px;
+}
+.marquee {
+    height: 30px;
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: lightgreen;
+    color: white;
+    padding: 10px 0;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.marqueetext {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+    from {
+        transform: translatex(0);
+    }
+    to {
+        transform: translatex(-100%);
+    }
+}
+.slidectn {
+    height: 250px;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.contents {
+    height: 250px;
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+h3 {
+
+    font-size: 20px;
+    color: #626b29;
+    font-weight: bold;
+    font-family: Comic Sans MS;
+}
+.widget {
+    height: 350px;
+    background-color:
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.topwidget {
+    display: flex;
+    height: 220px;
+}
+.leftwidget {
+    background-color: #728c69;
+    width: 47.5%;
+    border-radius: 10px;
+    margin-right: 5%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightwidget {
+    width: 47.5%;
+    border-radius: 10px;
+}
+.uprightwidget {
+    height: 105px;
+    width: 100%;
+    background: linear-gradient(to right, #228B22, #98ff98);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.downrightwidget {
+    height: 105px;
+    width: 100%;
+    background-color: brown;
+    border-radius: 10px;
+    background: linear-gradient(to right, #228B22, #98ff98);
+    color: white;
+    font-weight: bold;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.buttomwidget {
+    height: 120px;
+    width: 100%;
+    background-color: purple;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #228B22, #98ff98);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    font-size: 30px;
+    color: #626b29;
+    font-weight: bold;
+    font-family: Comic Sans MS;
+}
+.airpod {
+    width: 90px;
+    height: 90px;
+}
+.buttomwidget img {
+    width: 200px;
+    height: 100px;
+}
+#sidemenu {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #fbfcf8;
+    top: 0;
+    left: -105%;
+    padding: 15px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+
+/*.idebar {
+    width: 250px;
+    height: 80%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}*/
+
+#sidemenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidemenu ul li {
+    margin: 15px 0;
+}
+
+#sidemenu ul li a {
+    color: green;
+    text-decoration: none;
+}
+
+
+#sidemenu.active {
+    left: 0;
+}
+.menuhead {
+    height: 60px;
+}
+.menubuttom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#sellbtn {
+    height: 50px;
+    width: 200px;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.menubuttom a {
+    text-decoration: none;
+    color: green;
+    margin-top: 10px;
+}
+#profilemenu {
+    position: fixed;
+    width: 300px;
+    height: 500px;
+    background-color: #fbfcf8;
+    top: 0;
+    right: -105%;
+    padding: 15px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    margin-right: 10px;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+#profilemenu.active {
+    right: 0;
+}
+#signinbtn {
+    height: 50px;
+    width: 280px;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+#signupbtn {
+    height: 50px;
+    width: 200px;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.profilemenuhead {
+    height: 60px;
+}
+.profilemenubottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+button {
+    outline: none;
+    box-shadow: none;
+}
+button:focus
+button:focus-visible,
+button:active {
+    outline: none;
+    box-shadow: none;
+}
+.footer {
+    height: 450px;
+    width: 100%;
+    background-color: #000509;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upfooter {
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+.leftupfooter {
+    height: 100%;
+    width: 80%;
+}
+.rightupfooter {
+    height: 100%;
+    width: 50%;
+
+}
+.downfooter {
+    height: 50%;
+    width: 100%;
+    display: flex;
+
+}
+.leftdownfooter {
+    height: 100%;
+    width: 45%;
+
+}
+.middledownfooter {
+    height: 100%;
+    width: 20%;
+
+}
+.rightdownfooter {
+    height: 100%;
+    width: 40%;
+
+}
+.footer p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footer ul {
+    color: white;
+    list-style-type: none;
+    font-size: 12px;
+}
+.footer ul li {
+    margin-bottom: 10px;
+}
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footernote p {
+    font-size: 15px;
+}
