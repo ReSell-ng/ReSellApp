@@ -12,46 +12,57 @@
 </head>
 <body>
     <main>
-        <div class="header">
-            <div class="nav">
-                <button id="hamburger" class="iconbtn">
-                    <i class="fa-duotone fa-solid fa-bars"></i>
-                </button>
-                <div class="logo">
-                    <img src="assets/images/logo6.png" alt="logo" class="logoresize">
-                </div>
-                <button id="profilebtn" class="iconbtn">
-                    <i class="fa-regular fa-user"></i>
-                </button>
-                <button id="cartbtn" class="iconbtn">
-                    <i class="fa-regular fa-cart-shopping"></i>
-                </button>
-            </div>
-            <form action="/submit">
-                <div class="searchsection">
-                    <div class="searchbar">
-                        <input type="text" placeholder="Search everything...">
-                        <span class="separator">|</span>
-                        <select name="allcategories" id="">All categories
-                            <option value="allactegories">All categories</option>
-                            <option value="filter">Food</option>
-                            <option value="filter">Electronic</option>
-                            <option value="filter">Vehicles</option>
-                            <option value="filter">Phones & Tablets</option>
-                            <option value="filter">Properties</option>
-                            <option value="filter">Home Appliances</option>
-                            <option value="filter">Furniture</option>
-                            <option value="filter">Fashion</option>
-                            <option value="filter">Animals & Pets</option>
-                            <option value="filter">Arts & Sports</option>
-                        </select>
-                    </div>
-                    <button id="searchbtn" class="iconbtn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="navbar">
+            <div class="upnav">
+                <div class="navbar-left">
+                    <button id="hamburger" class="iconbtn">
+                        <i class="fa-duotone fa-solid fa-bars"></i>
                     </button>
                 </div>
-            </form>
+                <div class="navbar-center">
+                    <div class="logo">
+                        <img src="./assets/images/logo1-removebg-preview.png" alt="ReSell logo" class="logoreize">
+                    </div>
+                </div>
+
+ 
+                <div class="navbar-right">
+                    <button id="profilebtn" class="iconbtn">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+                    <button id="cartbtn" class="iconbtn">
+                        <i class="fa-regular fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="downnav">
+                <form action="/submit">
+                                                <div class="searchsection">
+                                                    <div class="searchbar">
+                                                        <input type="text" placeholder="Search everything...">
+                                                        <span class="separator">|</span>
+                                                        <select name="allcategories" id="">All categories
+                                                            <option value="allactegories">All categories</option>
+                                                            <option value="filter">Food</option>
+                                                            <option value="filter">Electronic</option>
+                                                            <option value="filter">Vehicles</option>
+                                                            <option value="filter">Phones & Tablets</option>
+                                                            <option value="filter">Properties</option>
+                                                            <option value="filter">Home Appliances</option>
+                                                            <option value="filter">Furniture</option>
+                                                            <option value="filter">Fashion</option>
+                                                            <option value="filter">Animals & Pets</option>
+                                                            <option value="filter">Arts & Sports</option>
+                                                        </select>
+                                                    </div>
+                                                    <button id="searchbtn" class="iconbtn">
+                                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                                    </button>
+                                                </div>
+                                            </form>
+            </div>
         </div>
+        
         <div id="sidemenu">
             <div class="menuhead">
                 <button class="iconbtn" id="backbtn">
@@ -63,17 +74,17 @@
                 My Categories
             </p>
             <ul>
-                <li><a href="#">Food</a></li>
-                <li><a href="#">Electronic</a></li>
-                <li><a href="#">Vehicles</a></li>
-                <li><a href="#">Phones & Tablets</a></li>
-                <li><a href="#">Properties</a></li>
-                <li><a href="#">Home Appliances</a></li>
-                <li><a href="#">Furniture</a></li>
-                <li><a href="#">Fashion</a></li>
-                <li><a href="#">Animals & Pets</a></li>
-                <li><a href="#">Arts & Sports</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="categorypage.html">Food</a></li>
+                <li><a href="categorypage.html">Electronic</a></li>
+                <li><a href="categorypage.html">Vehicles</a></li>
+                <li><a href="categorypage.html">Phones & Tablets</a></li>
+                <li><a href="categorypage.html">Properties</a></li>
+                <li><a href="categorypage.html">Home Appliances</a></li>
+                <li><a href="categorypage.html">Furniture</a></li>
+                <li><a href="categorypage.html">Fashion</a></li>
+                <li><a href="categorypage.html">Animals & Pets</a></li>
+                <li><a href="categorypage.html">Arts & Sports</a></li>
+                <li><a href="categorypage.html">Contact</a></li>
             </ul>
             <hr>
             <div class="menubuttom">
@@ -109,6 +120,19 @@
             Get groceries & more delivered in 2 hours or less around FUTO...
         </div>
     </div>
+     <section class="hero">
+            <div class="hero-content">
+                <div id="hero-heading">
+                    <h1>Discover Amazing Deals on Pre-Loved Items</h1>
+                </div>
+                <div id="hero-subheading">
+                    <p>
+                        Find great items from trusted sellers, right in your community
+                    </p>
+                </div>
+
+            </div>
+        </section>
     <div class="slidectn">
         <img src="assets/images/content1.mp4" alt="" class="contents">
         <img src="assets/images/content4.mp4" alt="" class="contents">
@@ -144,7 +168,112 @@
                 <img src="assets/images/food.png" alt="" class="airpod">
             </div>
         </button>
-
+    </div>
+    <div class="product-listing">
+        <div class="product-card">
+            <img src="path/to/image1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>
+                $100
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>
+                $120
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>
+                $150
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 4</h3>
+            <p>
+                $150
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 5</h3>
+            <p>
+                $150
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 6</h3>
+            <p>
+                $150
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 7</h3>
+            <p>
+                $150
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 8</h3>
+            <p>
+                $150
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 9</h3>
+            <p>
+                $150
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 10</h3>
+            <p>
+                $150
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 11</h3>
+            <p>
+                $150
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 12</h3>
+            <p>
+                $150
+            </p>
+            <button>View Details</button>
+        </div>
+        <div class="product-card">
+            <img src="path/to/image3.jpg" alt="Product 3">
+            <h3>Product 13</h3>
+            <p>
+                $150
+            </p>
+            <button>View Details</button>
+        </div>
     </div>
 </div>
 <div class="footer">

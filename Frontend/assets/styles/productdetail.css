@@ -128,7 +128,7 @@ input {
     flex-direction: column;
     gap: 10px;
 }
-button {
+.productinfo button {
     height: 50px;
     width: 100%;
     background-color: green;
