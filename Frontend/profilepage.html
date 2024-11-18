@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Profile</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .main {
+      font-family: Sans-Serif;
+    }
+
+    .h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 15vh;
+      background-color: #ccff00;
+      font-weight: bold;
+      font-size: 1.5rem;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+
+    .user-detail {
+      margin-top: 30px;
+      margin-left: 10px;
+      line-height: 50px;
+    }
+
+    .user-detail button {
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: gray;
+      color: white;
+    }
+
+    .butt {
+      display: flex;
+      justify-content: end;
+      margin-right: 20px;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="container">
+      <h3 class="h3">User Details</h3>
+    </div>
+
+    <div class="user-detail">
+      <p>First Name: </p>
+      <p>Middle Name: </p>
+      <p>Last Name: </p>
+      <p>Age: </p>
+      <p>Gender: </p>
+      <p>Phone No: </p>
+      <p>E-mail: </p>
+
+      <span class="butt">
+        <button id="edit-button">Edit</button>
+        <button id="save-button">Save</button>
+      </span>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const editButton = document.getElementById('edit-button');
+      const saveButton = document.getElementById('save-button');
+      const userDetails = document.querySelectorAll('.user-detail p');
+
+      
+      saveButton.disabled = true;
+
+      editButton.addEventListener('click', () => {
+        userDetails.forEach((detail) => {
+          
+          const text = detail.textContent.split(': ')[1] || ''; // Extract value after ":"
+          const label = detail.textContent.split(': ')[0]; // Extract label before ":"
+
+          detail.innerHTML = `${label}: <input type="text" value="${text}" />`;
+        });
+
+        editButton.disabled = true; // Disable the Edit button during editing
+        saveButton.disabled = false; // Enable the Save button
+      });
+
+      saveButton.addEventListener('click', () => {
+        userDetails.forEach((detail) => {
+          const input = detail.querySelector('input');
+          const label = detail.textContent.split(': ')[0]; // Get the label (e.g., "First Name")
+
+          if (input) {
+            detail.textContent = `${label}: ${input.value}`;
+          }
+        });
+
+        saveButton.disabled = true; // Disable Save button after saving
+        editButton.disabled = false; // Re-enable Edit button
+      });
+    });
+  </script>
+</body>
+</html>
