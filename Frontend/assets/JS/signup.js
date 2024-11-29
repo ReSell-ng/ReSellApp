@@ -16,11 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     toggleConfirmPassword.addEventListener("click", function () {
-        // Toggle the type attribute
         const type = confirmPasswordInput.getAttribute("type") === "password" ? "text": "password";
         confirmPasswordInput.setAttribute("type", type);
 
-        // Toggle the icon for visibility
         this.innerHTML = type === "password" ? '<i class="fa fa-eye"></i>': '<i class="fa fa-eye-slash"></i>';
     });
 })
