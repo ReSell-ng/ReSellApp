@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Orders Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> 
+ 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    #header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    #orders-container {
+      padding: 20px;
+    }
+    .order {
+      background-color: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .order h4 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .order p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    .order-status {
+      font-weight: bold;
+      color: green;
+    }
+    #back-button {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+  </style>
+  
+</head>
+  
+<body>
+  <div id="header">
+    <h2>My Orders</h2>
+  </div>
+
+  <div id="orders-container">
+    <!-- Orders will vome here -->
+  </div>
+
+  <div id="back-button" onclick="goBack()">Back to Account</div>
+
+  <script>
+    //To Fetch orders from the backend server
+    function loadOrders() {
+      fetch('http://localhost:3000/api/orders')  // change this URL with the actual server endpoint
+        .then(response => response.json())
+        .then(data => {
+          const ordersContainer = document.getElementById('orders-container');
+          ordersContainer.innerHTML = '';
+
+          if (data.length === 0) {
+            ordersContainer.innerHTML = '<p>You have no orders.</p>';
+          } else {
+            data.forEach(order => {
+              const orderElement = document.createElement('div');
+              orderElement.classList.add('order');
+              orderElement.innerHTML = `
+                <h4>Order #${order.id}</h4>
+                <p>Date: ${order.date}</p>
+                <p>Items: ${order.items}</p>
+                <p>Total: $${order.total.toFixed(2)}</p>
+                <p class="order-status">Status: ${order.status}</p>
+              `;
+              ordersContainer.appendChild(orderElement);
+            });
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching orders:', error);
+        });
+    }
+
+    //To go back to profile page
+    function goBack() {
+      window.location.href = "profilepage.html";  
+    }
+
+    
+    window.onload = loadOrders;
+  </script>
+</body>
+</html>
