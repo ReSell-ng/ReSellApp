@@ -7,54 +7,67 @@
   <title>My Account</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="txt.css">
+  <style>
+    #content p {
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <div id="main">
     <div id="header">
-      <h2>Account .....</h2>
+      <h2>Account...</h2>
     </div>
     
     <div id="top">
       <h3>
-        <i class="fas fa-user-circle" style="font-size:48px"></i>
+        <i class="fas fa-user-circle" style="font-size:36px;"></i>
         Welcome User
       </h3>
     </div>
     
     <div id="content">
       <h4 id="my-account">MY ACCOUNT</h4>
-      <p id="manage-product">
-        <i class="fas fa-box" style="margin-right: 8px;"></i> Manage Products
+      <p id="manage-product" onclick="navigate('manage-product.html')">
+        <i class="fas fa-box" style="margin-right: 10px;"></i> Manage Products
       </p>
-      <p id="likes">
-        <i class="fas fa-heart" style="margin-right: 8px;"></i> Likes
+      <p id="likes" onclick="navigate('likes.html')">
+        <i class="fas fa-heart" style="margin-right: 10px;"></i> Likes
       </p>
-      <p id="notification">
-        <i class="fas fa-bell" style="margin-right: 8px;"></i> Notifications
+      <p id="notification" onclick="navigate('notifications.html')">
+        <i class="fas fa-bell" style="margin-right: 10px;"></i> Notifications
       </p>
-      <p id="orders">
-        <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Orders
+      <p id="orders" onclick="navigate('order.html')">
+        <i class="fas fa-shopping-cart" style="margin-right: 10px;"></i> Orders
       </p>
-      <p id="settings">
-        <i class="fas fa-cog" style="margin-right: 8px;"></i> Settings
+      <p id="settings" onclick="navigate('settings.html')">
+        <i class="fas fa-cog" style="margin-right: 10px;"></i> Settings
       </p>
-      <p id="support">
-        <i class="fas fa-headset" style="margin-right: 8px;"></i> ReSell Support
+      <p id="support" onclick="navigate('support.html')">
+        <i class="fas fa-headset" style="margin-right: 10px;"></i> ReSell Support
       </p>
       <p id="logout" onclick="logout()">
-        <i class="fas fa-sign-out-alt" style="margin-right: 8px;"></i> Log out
+        <i class="fas fa-sign-out-alt" style="margin-right: 10px;"></i> Log out
       </p>
     </div>
   </div>
 
-<!--
+.
+
+
   <script>
+    
+    function navigate(url) {
+      window.location.href = url;
+    }
+
+    
     function logout() {
       alert("You have been logged out!");
-      window.location.href = "/login"; // Replace with your login or logout page URL
+      setTimeout(function(){
+      window.location.href = "signin.html";
+      }, 1500);
     }
   </script>
-  -->
-  
 </body>
 </html>
