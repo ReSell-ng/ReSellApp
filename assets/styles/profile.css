@@ -1,0 +1,397 @@
+@font-face {
+    font-family: outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+:root{
+    --primary-color: green;
+    --second-color:#ffffff;
+    --black-color: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: 
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    padding: 0.5rem;
+    background-color:  ;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    z-index: 10;
+    transition: padding 0.3s ease;
+    flex-direction: column;
+}
+.upnav {
+    display: flex;
+    background-color: ;
+    height: 50px;
+    width: 100%;
+}
+.downnav {
+    background-color: 
+    height: 50px;
+    width: 100%;
+}
+
+.navbar-left {
+    width: 10%;
+    height: 100%;
+    display: flex
+    align-items: 
+    gap: 
+    background-color: 
+}
+#hamburger {
+    padding: 0.5rem;
+}
+.navbar-center {
+    width: 60%;
+    height: 100%;
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-center img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 50px
+}
+.navbar-right {
+    background-color: ;
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+#profilebtn {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+#cartbtn {
+    margin-left: 20px;
+     margin-bottom: 5px;
+}
+.navbar-left a, .navbar-right a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar-left img {
+    width: 100px;
+    margin-left: 50px;
+    height: %;
+}
+
+.nav {
+    display: flex;
+    align-items:
+    justify-content: space-between;
+}
+.logo {
+    height: 68px;
+    width: %;
+    background-color: transparent;
+    padding-left: px; 
+}
+
+
+.iconbtn {
+    background-color: transparent;
+    border: none;
+    color: green;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom:
+    cursor: pointer;
+
+}
+.content {
+    margin-top: 150px;
+    background-color: 
+}
+.profiledetails {
+    height: 100px;
+    width: 100%;
+    background-color: ;
+    display: flex;
+}
+.profiledetails img {
+    height: 70px;
+    width: 70px;
+    margin-right: 40px;
+}
+.userAvatar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.userdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profilemenu {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    
+}
+.profilemenu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.profilemenu ul li {
+    margin: 0 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: backgroung-color 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+}
+
+.profilemenu ul li:hover {
+    background-color: transparent;
+    
+}
+.profilemenu ul li:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    transition: width 0.3s ease;
+    width: 100%;
+}
+.profilemenu ul li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: red;
+    transition: width 0.3s ease;
+
+}
+.profilecontent {
+    flex-grow: 1;
+    padding: 20px;
+}
+.contentSection {
+    display: none;
+}
+.contentSection.active {
+    display: block;
+}
+
+.profilecontent #manage-products  {
+    background-color:
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.profilecontent #manage-products  ul {
+    list-style-type: none;
+    display: flex;
+    
+    padding: 0;
+    margin: 0;
+}
+.profilecontent #manage-products ul li {
+    margin: 0 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: backgroung-color 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+}
+
+.profilecontent #manage-products ul li:hover {
+    background-color: transparent;
+    
+}
+.profilecontent #manage-products li:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    transition: width 0.3s ease;
+    width: 100%;
+}
+.profilecontent #manage-products ul li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: red;
+    transition: width 0.3s ease;
+
+}
+
+.profilecontent #orders  {
+    background-color:
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.profilecontent #orders  ul {
+    list-style-type: none;
+    display: flex;
+    
+    padding: 0;
+    margin: 0;
+}
+.profilecontent #orders ul li {
+    margin: 0 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: backgroung-color 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+}
+
+.profilecontent #orders ul li:hover {
+    background-color: transparent;
+    
+}
+.profilecontent #orders li:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    transition: width 0.3s ease;
+    width: 100%;
+}
+.profilecontent #
+.profilecontent #manage-products  {
+    background-color:
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.profilecontent #manage-products  ul {
+    list-style-type: none;
+    display: flex;
+    
+    padding: 0;
+    margin: 0;
+}
+.profilecontent #manage-products ul li {
+    margin: 0 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: backgroung-color 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+}
+
+.profilecontent #manage-products ul li:hover {
+    background-color: transparent;
+    
+}
+.profilecontent #manage-products li:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    transition: width 0.3s ease;
+    width: 100%;
+}
+.profilecontent #manage-products ul li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: red;
+    transition: width 0.3s ease;
+
+} ul li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: red;
+    transition: width 0.3s ease;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .profilemenu ul {
+        display: none; 
+        flex-direction: column;
+         
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: #f4f4f4;
+        border: 1px solid #ccc;
+        
+    }
+
+    .profilemenu ul li {
+        margin: 10px 0;
+        padding: 15px;
+        text-align: cente
+        font-size: 18px;
+    }
+
+   
+    .profilemenu ul.active {
+        display: flex;
+    }
+    
+    #hamburger {
+        display: block; 
+    }
+}
