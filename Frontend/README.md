@@ -41,3 +41,39 @@ This page shows the user details, where to manage products the user posted for s
 <image style="border-radius:10px;" src="./assets/images/ss/Account_page.jpg" width="200"/>
 <image style="border-radius:10px;" src="./assets/images/ss/Profile_page.jpg" width="200"/>
 
+
+
+
+# Product Detail Page
+
+## Overview  
+This page provides detailed information about a specific product, including its description, price, images, and related products.
+
+## Features  
+- **Product Information**: Name, price, description, and image gallery.  
+- **User Actions**: Add to Cart, Wishlist, and Quantity Selector.  
+- **Reviews & Ratings**: Display and submit user reviews.  
+- **Related Products**: Suggestions based on the current product.
+
+## File Structure  
+```
+/product-detail-page
+  ├── index.html        # Page structure
+  ├── styles/
+      ├── main.css      # Main styling
+      └── components.css # Component-specific styles
+  ├── scripts/
+      └── main.js       # Page interactions
+```
+
+## Styling  
+- **Framework**: Tailwind CSS or custom CSS.  
+- **Components**: Modular and reusable styles for product cards, buttons, and layout grids.
+
+## Setup  
+1. Clone the repository.  
+2. Ensure all dependencies are installed (if applicable).  
+3. Open `index.html` in a browser to view the page.
+
+## Contribution  
+Feel free to submit pull requests or report issues.
