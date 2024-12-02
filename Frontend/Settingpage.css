@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .account-settings {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .account-settings-header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .account-settings-header h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        .account-settings-section {
+            margin-bottom: 40px;
+        }
+
+        .account-settings-section h3 {
+            color: #444;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #2196F3;
+        }
+
+        button {
+            background-color: #2196F3;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1976D2;
+        }
+
+        @media (max-width: 480px) {
+            .account-settings {
+                padding: 20px;
+            }
+
+            .account-settings-header h2 {
+                font-size: 20px;
+            }
+
+            .account-settings-section h3 {
+                font-size: 18px;
+            }
+
+            input {
+                padding: 8px;
+            }
+
+            button {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="account-settings">
+        <div class="account-settings-header">
+            <h2>Account Settings</h2>
+        </div>
+
+        <div class="account-settings-section">
+            <h3>Edit My Profile Information</h3>
+            <form>
+                <div class="form-group">
+                    <label for="old-name">Old Name:</label>
+                    <input type="text" id="old-name" name="old-name" value="Reseller1">
+                </div>
+
+                <div class="form-group">
+                    <label for="new-name">New Name:</label>
+                    <input type="text" id="new-name" name="new-name" value="Gadget Vendor">
+                </div>
+
+                <div class="form-group">
+                    <label for="old-phone">Old Phone Number:</label>
+                    <input type="tel" id="old-phone" name="old-phone" value="0814xxxxx">
+                </div>
+
+                <div class="form-group">
+                    <label for="new-phone">New Phone Number:</label>
+                    <input type="tel" id="new-phone" name="new-phone" value="0814xxxxx">
+                </div>
+
+                <div class="form-group">
+                    <label for="old-address">Old Address:</label>
+                    <input type="text" id="old-address" name="old-address" value="Eiseman Junction">
+                </div>
+
+                <div class="form-group">
+                    <label for="new-address">New Address:</label>
+                    <input type="text" id="new-address" name="new-address" value="Eziobodo, Sekeni mall">
+                </div>
+
+                <div class="form-group">
+                    <label for="old-email">Old Email:</label>
+                    <input type="email" id="old-email" name="old-email" value="reseller1@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="new-email">New Email:</label>
+                    <input type="email" id="new-email" name="new-email" value="gadgetvendor@gmail.com">
+                </div>
+
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+
+        <div class="account-settings-section">
+            <h3>Change My Password</h3>
+            <form>
+                <div class="form-group">
+                    <label for="current-password">Current Password:</label>
+                    <input type="password" id="current-password" name="current-password">
+                </div>
+
+                <div class="form-group">
+                    <label for="new-password">New Password:</label>
+                    <input type="password" id="new-password" name="new-password">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                </div>
+
+                <button type="submit">Change Password</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
