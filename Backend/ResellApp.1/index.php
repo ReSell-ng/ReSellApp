@@ -98,7 +98,7 @@ if ($categories_result && $categories_result->num_rows > 0) {
         </div>
         <div class="down-nav">
             <!--Search bar -->
-            <form action="pages/categories.php" method="POST">
+            <form action="pages/categories.php" method="GET">
                 <div class="searchsection">
                     <div class="searchbar">
                         <input type="text" name="search_query" placeholder="Search everything...">
