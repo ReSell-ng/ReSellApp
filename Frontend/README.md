@@ -34,8 +34,3 @@ This page shows the user details, where to manage products the user posted for s
 
 - Report an Issue
 - FAQs
-
-### Screenshots
-
-<image style="border-radius:10px;" src="./assets/images/ss/Account_page.jpg" width="200"/>
-<image style="border-radius:10px;" src="./assets/images/ss/Profile_page.jpg" width="200"/>
