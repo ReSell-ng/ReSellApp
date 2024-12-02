@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/productdetail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div class="header">
+            <div class="nav">
+                <button id="hamburger" class="iconbtn">
+                    <i class="fa-duotone fa-solid fa-bars"></i>
+                </button>
+                <div class="logo">
+                    <img src="assets/images/logo6.png" alt="logo" class="logoresize">
+                </div>
+                <button id="profilebtn" class="iconbtn">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <button id="cartbtn" class="iconbtn">
+                    <i class="fa-regular fa-cart-shopping"></i>
+                </button>
+            </div>
+            <form action="/submit">
+                <div class="searchsection">
+                    <div class="searchbar">
+                        <input type="text" placeholder="Search everything...">
+                        <span class="separator">|</span>
+                        <select name="allcategories" id="">All categories
+                            <option value="allactegories">All categories</option>
+                            <option value="filter">Food</option>
+                            <option value="filter">Electronic</option>
+                            <option value="filter">Vehicles</option>
+                            <option value="filter">Phones & Tablets</option>
+                            <option value="filter">Properties</option>
+                            <option value="filter">Home Appliances</option>
+                            <option value="filter">Furniture</option>
+                            <option value="filter">Fashion</option>
+                            <option value="filter">Animals & Pets</option>
+                            <option value="filter">Arts & Sports</option>
+                        </select>
+                    </div>
+                    <button id="searchbtn" class="iconbtn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="productdetailscontainer">
+            <div class="productimages">
+                <img id="mainImage" src="assets/images/placeholder.jpg" alt="Product Image">
+                <div class="thumbnailgallery">
+                    <img src="assets/images/placeholder.jpg" alt="Thumbnail 1">
+                    <img src="assets/images/placeholder.jpg" alt="Thumbnail 2">
+                    <img src="assets/images/placeholder.jpg" alt="Thumbnail 3">
+                </div>
+            </div>
+            <div class="productinfo">
+                <h1 id="productname">Product Name</h1>
+                <p id="category">
+                    Category
+                </p>
+                <p id="productDescription">
+                    product Description
+                </p>
+                <p class="price" id="productPrice">
+                    $0.00
+                </p>
+                <button id="buyNowBtn">Buy Now</button>
+                <button id="addToCartBtn">Add to Cart</button>
+            </div>
+            <div class="seller-info">
+                <h3>Seller Information</h3>
+                <p id="sellerName">
+                    Seller Name
+                </p>
+                <p id="contactInfo">
+                    Contact Info
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
