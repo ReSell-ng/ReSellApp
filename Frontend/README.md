@@ -49,6 +49,12 @@ This page shows the user details, where to manage products the user posted for s
 ## Overview  
 This page provides detailed information about a specific product, including its description, price, images, and related products.
 
+# Settngs page
+This page is a user friendly page that enables the users (Seller and Buyer):
+
+- **Edit personal details** such as Name, Phone number, Email address, Location.
+- **Change password**
+
 ## Features  
 - **Product Information**: Name, price, description, and image gallery.  
 - **User Actions**: Add to Cart, Wishlist, and Quantity Selector.  
