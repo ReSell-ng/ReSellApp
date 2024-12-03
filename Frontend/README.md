@@ -45,6 +45,8 @@ This page shows the user details, where to manage products the user posted for s
 
 
 # Product Detail Page
+![IMG-20241203-WA0010](https://github.com/user-attachments/assets/7c8b67c6-c48c-4006-9427-f9783d77326b)
+
 
 ## Overview  
 This page provides detailed information about a specific product, including its description, price, images, and related products.
