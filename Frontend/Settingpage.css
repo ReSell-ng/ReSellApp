@@ -103,7 +103,6 @@
             input {
                 padding: 8px;
             }
-
             button {
                 padding: 10px;
             }
@@ -162,7 +161,6 @@
                 <button type="submit">Update Profile</button>
             </form>
         </div>
-
         <div class="account-settings-section">
             <h3>Change My Password</h3>
             <form>
